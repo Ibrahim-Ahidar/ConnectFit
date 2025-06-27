@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectFit - Training</title>
+    <link rel="stylesheet" href="training.css" />
+</head>
+
+<body>
+    <header class="navbar fade-in">
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../logo2.png" alt="ConnectFit Logo" />
+            </div>
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
+            <a href="../Home/home.html">Home</a>
+            <a href="../Training/training.html" style="color : #32CD32">Training</a>
+            <a href="../Products/products.html">Products</a>
+            <a href="../About/about.html" >About</a>
+        </nav>
+    </header>
+    <div class="nav-menu" id="navMenu">
+        <a href="../Home/home.html">Home</a>
+        <a href="../Training/training.html" style="color : #32CD32">Training</a>
+        <a href="../Products/products.html">Products</a>
+        <a href="../About/about.html">About</a>
+    </div>
+
+    <main class="training-section fade-in" >
+        <h1 class="training-title">
+            <span class="green-text">Personal</span> Training
+            <span class="training-svg"></span>
+        </h1>
+
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="training-card">
+                <h2 class="card-title" id="elite">Elite<sup><sup
+                            style="color: rgba(255, 255, 255, 0.553); font-size: 20px">Big Value Saver</sup></sup></h2>
+                <p class="card-duration">x1 Year - 69.99$</p>
+                <p class="card-line">Know us</p>
+                <p class="card-line">Get your program</p>
+                <p class="card-line">Connect with coaches</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="training-card">
+                <h2 class="card-title" id="pro">Pro</h2>
+                <p class="card-duration">x6 Months - 59.99$</p>
+                <p class="card-line">Know us</p>
+                <p class="card-line">Get your program</p>
+                <p class="card-line">Connect with coaches</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="training-card">
+                <h2 class="card-title" id="premium">Premium</h2>
+                <p class="card-duration">x3 Months - 25.99$</p>
+                <p class="card-line">Know us</p>
+                <p class="card-line">Get your program</p>
+                <p class="card-line">Connect with coaches</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="training-card">
+                <h2 class="card-title" id="start">Start</h2>
+                <p class="card-duration">x1 Month - 9.99$</p>
+                <p class="card-line">Know us</p>
+                <p class="card-line">Get your program</p>
+                <p class="card-line">Connect with coaches</p>
+            </div>
+        </div>
+    </main>
+    <section class="info-points">
+        <p class="info-point">Get your program with applications, applicational videos, and even with scientifical
+            explanations.</p>
+        <p class="info-point">Connect with our team, 24 out of 7, and ask about anything you want.</p>
+        <p class="info-point">Change your program with time and with your progress.</p>
+        <p class="info-point">Get your diet based on getting weight or losing it (calories, protein, carbs, fat,
+            vitamins) based on your activeness over the day.</p>
+        <p class="info-point">Last, don't forget to thank us. Good luck.</p>
+    </section>
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-content">
+            <span class="close-btn" onclick="closeModal()">✕</span>
+            <h2>Complete Your Payment</h2>
+
+            <form class="payment-form">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required />
+
+                <label>Card Number</label>
+                <input type="text" placeholder="1234 5678 9012 3456" required />
+
+                <label>Expiry Date</label>
+                <input type="text" placeholder="MM/YY" required />
+
+                <label>CVV</label>
+                <input type="text" placeholder="123" required />
+
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="training.js"></script>
+</body>
+
+</html>

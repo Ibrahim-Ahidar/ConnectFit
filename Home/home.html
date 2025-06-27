@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectFit - Home</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+
+    <div class="background-scroll">
+        <div class="scroll-track">
+            <video src="img/video1.mp4" autoplay muted loop></video>
+            <video src="img/video2.mp4" autoplay muted loop></video>
+            <video src="img/video3.mp4" autoplay muted loop></video>
+            <video src="img/video4.mp4" autoplay muted loop></video>
+            <video src="img/video5.mp4" autoplay muted loop></video>
+            <video src="img/video1.mp4" autoplay muted loop></video>
+            <video src="img/video2.mp4" autoplay muted loop></video>
+            <video src="img/video3.mp4" autoplay muted loop></video>
+            <video src="img/video4.mp4" autoplay muted loop></video>
+            <video src="img/video5.mp4" autoplay muted loop></video>
+        </div>
+    </div>
+
+    <header class="navbar fade-in">
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../logo2.png" alt="ConnectFit Logo" />
+            </div>
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
+            <a href="../Home/home.html" style="color : #32CD32">Home</a>
+            <a href="../Training/training.html">Training</a>
+            <a href="../Products/products.html">Products</a>
+            <a href="../About/about.html" >About</a>
+        </nav>
+    </header>
+    <div class="nav-menu" id="navMenu">
+        <a href="../Home/home.html" style="color : #32CD32">Home</a>
+        <a href="../Training/training.html">Training</a>
+        <a href="../Products/products.html">Products</a>
+        <a href="../About/about.html">About</a>
+    </div>
+
+    <section class="welcome-section fade-in">
+        <h1>Welcome to ConnectFit<br>Your Fitness Journey</h1>
+        <h2>
+            <div id="build">Build Better Fit</div>
+            <div id="Healthyandsafe">Healthy And Safe.</div>
+        </h2>
+        <p>You can start your program based on science and studies to be effective and to not waste your time.</p>
+    </section>
+
+    <section class="motivational-section">
+        <img src="img/dev1.jpg" class="motivation-img left" />
+        <div class="motivation-text">
+            <h2>You Can Do It</h2>
+            <a href="../training/training.html" class="start-link">Start Your Training</a>
+        </div>
+        <img src="img/dev2.jpg" class="motivation-img right" />
+    </section>
+    
+    <section class="products-section" id="productSection">
+        <div class="product-image top-left"><img src="img/creatine.jpg" alt="Product 1" /></div>
+        <div class="product-image bottom-left"><img src="img/whey.jpg" alt="Product 2" /></div>
+        <div class="product-image top-right"><img src="img/Lifting Straps.jpg" alt="Product 3" /></div>
+        <div class="product-image bottom-right"><img src="img/shakeer.jpg" alt="Product 4" /></div>
+
+        <div class="products-text">
+            <h2>Train Smarter, Not Harder</h2>
+            <p>Not just Train, but Train Right.</p>
+            <a href="../Products/products.html" class="cta-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-text">
+            <h2>Know More About Us</h2>
+            <a href="../about/about.html" class="about-btn">Discover Our Story</a>
+        </div>
+    </section>
+
+
+    <script src="home.js"></script>
+</body>
+
+</html>

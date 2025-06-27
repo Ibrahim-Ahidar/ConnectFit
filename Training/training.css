@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: black;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo img {
+  width: 8em;
+  margin-top: 5px;
+}
+
+.nav-links a {
+  margin-left: 70px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #32CD32;
+}
+
+.training-section {
+  padding: 50px 20px 50px;
+  text-align: left;
+  color: white;
+}
+
+.training-title {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.training-title .green-text {
+  color: #32CD32;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.training-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 40px;
+  padding-top: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+.card-title {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.card-duration {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card-line {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+#elite {
+  color: #79ff79;
+}
+
+#pro {
+  color: gold;
+}
+
+#premium {
+  color: silver;
+}
+
+#start {
+  color: #cd8032a2;
+}
+
+.card-line {
+  font-size: 16px;
+  margin: 10px 10px;
+  padding-left: 20px;
+  position: relative;
+  color: #ddd;
+}
+
+.card-line::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #32CD32;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.training-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.training-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.training-card:hover {
+  transform: translateY(-8px);
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: 0.2s;
+}
+
+.info-points {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  padding: 0 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.info-point {
+  font-size: 17px;
+  margin-bottom: 18px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.info-point::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #32CD32;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.payment-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.payment-content {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: rgba(255, 0, 0, 0.551);
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.payment-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  color: white;
+}
+
+.payment-form button {
+  background-color: black;
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #00ff88;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: background-color 0.5s;
+}
+
+.payment-form button:hover {
+  background-color: #00ff88;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu-toggle,
+.nav-menu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    z-index: 200;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+    position: relative;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    z-index: 200;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    border-radius: 10px;
+  }
+
+  .nav-menu.show {
+    display: flex;
+    gap: 20px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .nav-menu a:hover {
+    color: #32CD32;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .training-card {
+    padding: 25px;
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 60px;
+  }
+
+  .card-duration {
+    font-size: 16px;
+  }
+
+  .card-line {
+    font-size: 14px;
+  }
+
+  
+}

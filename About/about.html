@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - ConnectFit</title>
+    <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+
+    <header class="navbar fade-in">
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../logo2.png" alt="ConnectFit Logo" />
+            </div>
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
+            <a href="../Home/home.html">Home</a>
+            <a href="../Training/training.html">Training</a>
+            <a href="../Products/products.html">Products</a>
+            <a href="../About/about.html" style="color : #32CD32">About</a>
+        </nav>
+    </header>
+    <div class="nav-menu" id="navMenu">
+        <a href="../Home/home.html">Home</a>
+        <a href="../Training/training.html">Training</a>
+        <a href="../Products/products.html">Products</a>
+        <a href="../About/about.html" style="color : #32CD32">About</a>
+    </div>
+    <main class="about-container">
+        <h1 class="fade-in main-title" style="color: #32CD32;">About Us</h1>
+        <p class="fade-in subtitle">Stronger Together — Build the best version of yourself</p>
+
+        <section class="fade-in section">
+            <h2>Who We Are</h2>
+            <p>ConnectFit is a platform dedicated to fitness enthusiasts who want to transform their bodies and
+                lifestyle. We connect you with expert coaches, tailored training plans, and high-quality products.</p>
+        </section>
+
+        <section class="fade-in section">
+            <h2>Our Mission</h2>
+            <p>Our mission is to empower individuals to take control of their health and achieve their physical goals
+                with smart and personalized solutions.</p>
+        </section>
+
+        <section class="fade-in section">
+            <h2>Our Vision</h2>
+            <p>We aim to be a global fitness companion that supports users through every step of their transformation
+                journey.</p>
+        </section>
+
+        <section class="fade-in section">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="imgs/woman.png" alt="Coach" />
+                    <h3>Sara J.</h3>
+                    <p>Nutrition Expert</p>
+                </div>
+                <div class="team-member">
+                    <img src="imgs/man1.png" alt="Coach" />
+                    <h3>Yazid R.</h3>
+                    <p>Strength Coach</p>
+                </div>
+                <div class="team-member">
+                    <img src="imgs/man2.png" alt="Coach" id="small-coach" />
+                    <h3>Mouslim K.</h3>
+                    <p>Mobility Specialist</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="fade-in section">
+            <h2>FAQs</h2>
+            <div class="faq">
+                <h4>How do I connect with a coach?</h4>
+                <p>You can subscribe to a plan, and you’ll instantly be connected to certified coaches via your
+                    dashboard.</p>
+
+                <h4>Can I change my training plan later?</h4>
+                <p>Yes! You can modify your plan anytime based on your progress and feedback.</p>
+
+                <h4>Do you offer diet plans?</h4>
+                <p>Yes, diet plans are included in every subscription and are tailored to your fitness goals.</p>
+            </div>
+        </section>
+        <section class="fade-in contact-section">
+            <a href="mailto:support@connectfit.com" class="contact-btn">Contact Us</a>
+        </section>
+
+    </main>
+    <div class="contact-modal" id="contactModal">
+        <div class="contact-content">
+            <span class="close-btn" onclick="closeContact()">✕</span>
+            <h2>Contact Us</h2>
+            <ul class="contact-links">
+                <li class="contact"><a href="https://www.instagram.com/adamahidar/" target="_blank">
+                        <div>📸 Instagram&nbsp;:</div>
+                    </a>&nbsp;adamahidar</li>
+                <li class="contact">
+                    <div>💬 WhatsApp&nbsp;:</div>&nbsp;+212 681-014353
+                </li>
+                <li class="contact">
+                    <div>✉️ Email</div>&nbsp;:&nbsp;ahidaribrahim77@gmail.com
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="about.js"></script>
+</body>
+
+</html>

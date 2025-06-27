@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectFit - Products</title>
+    <link rel="stylesheet" href="products.css" />
+</head>
+
+<body>
+    <div class="static-background"></div>
+
+    <header class="navbar fade-in">
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../logo2.png" alt="ConnectFit Logo" />
+            </div>
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
+            <a href="../Home/home.html">Home</a>
+            <a href="../Training/training.html">Training</a>
+            <a href="../Products/products.html" style="color : #32CD32">Products</a>
+            <a href="../About/about.html">About</a>
+        </nav>
+    </header>
+    <div class="nav-menu" id="navMenu">
+        <a href="../Home/home.html">Home</a>
+        <a href="../Training/training.html">Training</a>
+        <a href="../Products/products.html" style="color : #32CD32">Products</a>
+        <a href="../About/about.html">About</a>
+    </div>
+
+    <main class="products-section fade-in">
+        <h1 class="shop-title">Shop</h1>
+        <p class="shop-subtitle">Make your development faster</p>
+
+        <div class="product-tabs">
+            <button class="tab-btn active" data-target="supplements">Supplements</button>
+            <button class="tab-btn" data-target="gym-tools">Gym Tools</button>
+            <button class="tab-btn" data-target="home-training">Home Training</button>
+            <button class="tab-btn" data-target="others">Others</button>
+        </div>
+
+        <div class="products-content">
+            <div class="products-grid" id="supplements">
+                <div class="product-card">
+                    <img src="imgs/products/Supplements/creatine 1.jpg" alt="Creatine - Optimum Nutrition" />
+                    <h3>Creatine - Optimum Nutrition</h3>
+                    <p class="price">$38.99</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Supplements/creatine 2.webp" alt="Creatine - Applied Nutrition" />
+                    <h3>Creatine - Applied Nutrition</h3>
+                    <p class="price">$34.49</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Supplements/mass.jpeg" alt="Serious Mass - Sachet" />
+                    <h3>Serious Mass - Sachet</h3>
+                    <p class="price">$70.99</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Supplements/mass.jpg" alt="Serious Mass - 6LB" />
+                    <h3>Serious Mass - 6LB (Banana)</h3>
+                    <p class="price">$59.99</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Supplements/whey.jpg" alt="Whey Protein - Nitro Tech" />
+                    <h3>Whey Protein - Nitro Tech</h3>
+                    <p class="price">$64.50</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Supplements/whey protein vanilla .webp" alt="Whey Protein - Vanilla" />
+                    <h3>Whey Protein - Vanilla</h3>
+                    <p class="price">$48.99</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Supplements/bcaa.avif" alt="BCAA - Muscle Recovery" />
+                    <h3>BCAA - Muscle Recovery</h3>
+                    <p class="price">$42.75</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Supplements/creatine 1.jpg" alt="Creatine - Optimum (Extra)" />
+                    <h3>Creatine - Optimum (Extra)</h3>
+                    <p class="price">$39.99</p>
+                </div>
+
+            </div>
+
+            <div class="products-grid hidden" id="gym-tools">
+                <div class="product-card">
+                    <img src="imgs/products/Gym Tools/dumbbel.jpeg" alt="Adjustable Dumbbell Set" />
+                    <h3>Adjustable Dumbbell Set</h3>
+                    <p class="price">$54.99</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Gym Tools/lifting straps .webp" alt="Lifting Straps - Hebozen" />
+                    <h3>Lifting Straps - Hebozen</h3>
+                    <p class="price">$11.50</p>
+                </div>
+
+            </div>
+
+            <div class="products-grid hidden" id="home-training">
+                <div class="product-card">
+                    <img src="imgs/products/Home Training/door bar.webp" alt="Pull-Up Door Bar" />
+                    <h3>Pull-Up Door Bar</h3>
+                    <p class="price">$21.99</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Home Training/goma.webp" alt="Resistance Band - Fitness Boutique" />
+                    <h3>Resistance Band</h3>
+                    <p class="price">$14.49</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Home Training/parallettes-max-produktfoto-1.webp"
+                        alt="Wood Parallettes - GORNATION" />
+                    <h3>Wood Parallettes - GORNATION</h3>
+                    <p class="price">$59.00</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Home Training/push ups.jpg" alt="Wood Parallettes - STREETGAINS" />
+                    <h3>Wood Parallettes - STREETGAINS</h3>
+                    <p class="price">$48.99</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/Home Training/door bar 2.webp" alt="Door Pull-Up Bar - Decathlon" />
+                    <h3>Door Pull-Up Bar - Decathlon</h3>
+                    <p class="price">$26.75</p>
+                </div>
+
+            </div>
+
+            <div class="products-grid hidden" id="others">
+                <div class="product-card">
+                    <img src="imgs/products/others/boxing.webp" alt="Adidas Boxing Gloves" />
+                    <h3>Adidas Boxing Gloves</h3>
+                    <p class="price">$38.99</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/others/feet.webp" alt="Jump Rope - Speed Cable" />
+                    <h3>Jump Rope - Speed Cable</h3>
+                    <p class="price">$12.50</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/others/kora.webp" alt="Stability Ball - Fitness Boutique" />
+                    <h3>Stability Ball - Fitness Boutique</h3>
+                    <p class="price">$18.75</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="imgs/products/others/mizan.webp" alt="Digital Body Scale - TANITA" />
+                    <h3>Digital Body Scale - TANITA</h3>
+                    <p class="price">$34.95</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-content">
+          <span class="close-btn" onclick="closeModal()">✕</span>
+          <h2>Complete Your Payment</h2>
+      
+          <form class="payment-form">
+            <label>Full Name</label>
+            <input type="text" placeholder="John Doe" required />
+      
+            <label>Card Number</label>
+            <input type="text" placeholder="1234 5678 9012 3456" required />
+      
+            <label>Expiry Date</label>
+            <input type="text" placeholder="MM/YY" required />
+      
+            <label>CVV</label>
+            <input type="text" placeholder="123" required />
+      
+            <button type="submit">Pay Now</button>
+          </form>
+        </div>
+      </div>
+      
+
+
+    <script src="products.js"></script>
+</body>
+
+</html>
